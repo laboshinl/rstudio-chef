@@ -25,7 +25,7 @@ when "ubuntu", "debian"
         not_if { ::File.exists?('/etc/init/shiny-server.conf') }
     end
 
-    r_package "shiny"
+    #r_package "shiny"
 end
 
 group "shiny"
