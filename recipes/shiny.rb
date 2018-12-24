@@ -43,8 +43,8 @@ template "/etc/init/shiny-server.conf" do
 end
 
 service "shiny-server" do
-  provider Chef::Provider::Service::Upstart
-  supports :start => true, :stop => true, :restart => true, :reload => true
+  #provider Chef::Provider::Service::Upstart
+  #supports :start => true, :stop => true, :restart => true, :reload => true
   action [:enable, :start]
 end
 
