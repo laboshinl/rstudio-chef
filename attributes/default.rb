@@ -48,7 +48,7 @@ default['rstudio']['shiny']['log_dir'] = '/var/log/shiny-server'
 default['rstudio']['shiny']['directory_index'] = 'on'
 
 # Shiny can't be installe by APT. Don't get me started.
-default['rstudio']['shiny']['version'] = '0.4.0.8'
+default['rstudio']['shiny']['version'] = '1.5.9.923'
 default['rstudio']['shiny']['arch'] = node['kernel']['machine'] =~ /x86_64/ ? "amd64" : "i386"
 
 # Shiny server supports the users cookbook for HTTP Auth
